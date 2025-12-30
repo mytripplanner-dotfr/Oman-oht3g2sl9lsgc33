@@ -1,0 +1,332 @@
+{
+  "pays": "Oman",
+  "drapeau": "🇴🇲",
+  "symbole": "🐪",
+  "titre": "Oman: Évasion relaxante entre désert, wadis et montagnes",
+  "budget_total": "2700€",
+  "duree": "15 jours",
+  "date_debut": "2026-01-15",
+  "date_fin": "2026-01-29",
+  "temps_vol": "11h20 (depuis Saint maurice, italie)",
+  "escale": "1",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Mascate, première immersion",
+      "legende": "Après un long voyage, la capitale omanaise vous accueille en douceur. Installation à l'hôtel et première balade relaxante le long de la corniche pour sentir l'ambiance locale et admirer le coucher de soleil sur le golfe d'Oman.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🛬</strong>: Arrivée à l'aéroport international de Mascate (MCT) et transfert vers votre hôtel.",
+        "<strong>🛏️</strong>: Installation et détente à votre hébergement après le voyage.",
+        "<strong>🚶‍♂️</strong>: Balade tranquille le long de la corniche de Muttrah, imprégnez-vous de l'atmosphère maritime."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Le trajet depuis Saint Maurice est long. Prévoyez une première journée légère pour vous acclimater au décalage horaire et à la chaleur."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🕌",
+      "titre": "Mascate: Splendeurs architecturales et souk traditionnel",
+      "legende": "Découvrez la majestueuse Grande Mosquée du Sultan Qaboos, un chef-d'œuvre d'architecture islamique, puis plongez dans l'effervescence colorée du souk de Muttrah pour une expérience sensorielle unique.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🕌</strong>: Visite de la Grande Mosquée du Sultan Qaboos, un lieu de sérénité et de grandeur architecturale (tenue respectueuse exigée).",
+        "<strong>🛍️</strong>: Flânerie dans le souk de Muttrah, l'un des plus anciens marchés arabes, pour des souvenirs et des épices.",
+        "<strong>🌅</strong>: Dîner relaxant avec vue sur le port ou la mer."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "👗",
+          "titre": "Code vestimentaire",
+          "texte": "Pour la Grande Mosquée, les femmes doivent couvrir leurs cheveux, leurs bras et leurs jambes. Les hommes doivent porter des pantalons longs."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏞️",
+      "titre": "Trésors naturels: Bimmah Sinkhole et Wadi Shab",
+      "legende": "Aventurez-vous vers le sud pour découvrir le spectaculaire Bimmah Sinkhole, une piscine naturelle aux eaux turquoise, avant de vous offrir une douce promenade dans le verdoyant Wadi Shab, ponctué de bassins rafraîchissants.",
+      "lieu": "Mascate / Sur",
+      "activites": [
+        "<strong>🏊‍♀️</strong>: Baignade rafraîchissante dans le Bimmah Sinkhole, une doline impressionnante aux eaux cristallines.",
+        "<strong>🚶‍♀️</strong>: Promenade facile dans le Wadi Shab, explorant les premiers bassins naturels et les palmeraies (possibilité de nager dans les piscines).",
+        "<strong>🚗</strong>: Route panoramique le long de la côte vers Sur, avec des arrêts pour admirer les paysages."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Wadi Shab",
+          "texte": "La promenade dans Wadi Shab peut être glissante par endroits. Prévoyez des chaussures adaptées à l'eau et à la marche."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🐢",
+      "titre": "Sur: Dhows et tortues marines",
+      "legende": "Explorez la ville côtière de Sur, célèbre pour ses chantiers navals traditionnels de dhows, puis vivez une expérience inoubliable en observant les tortues marines pondre leurs œufs ou éclore sur la plage de Ras Al Jinz.",
+      "lieu": "Sur / Ras Al Jinz",
+      "activites": [
+        "<strong>⛵</strong>: Visite d'un chantier naval de dhows à Sur, témoins de l'héritage maritime omanais.",
+        "<strong>🏖️</strong>: Détente sur une plage isolée près de Sur, profitant du calme et du soleil.",
+        "<strong>🐢</strong>: Excursion nocturne ou matinale à la réserve de tortues de Ras Al Jinz pour observer ces créatures fascinantes."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🌙",
+          "titre": "Observation des tortues",
+          "texte": "Les visites à Ras Al Jinz sont encadrées et se font en silence pour ne pas déranger les tortues. Réservez à l'avance."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🏜️",
+      "titre": "Wadi Bani Khalid et les dunes de Wahiba Sands",
+      "legende": "Plongez dans les eaux émeraude du Wadi Bani Khalid, une oasis luxuriante, avant de vous aventurer dans l'immensité dorée des Wahiba Sands pour une nuit magique sous les étoiles dans un camp bédouin.",
+      "lieu": "Wadi Bani Khalid / Wahiba Sands",
+      "activites": [
+        "<strong>🌴</strong>: Baignade et relaxation dans les piscines naturelles du Wadi Bani Khalid, entourées de palmiers.",
+        "<strong>🚗</strong>: Traversée des dunes de Wahiba Sands en 4x4 jusqu'à votre campement désertique.",
+        "<strong>✨</strong>: Coucher de soleil spectaculaire sur les dunes et dîner traditionnel sous le ciel étoilé."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Conduite dans le désert",
+          "texte": "Un 4x4 est indispensable pour explorer les Wahiba Sands. Il est recommandé de dégonfler légèrement les pneus avant d'entrer dans le désert."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🏰",
+      "titre": "Nizwa: Cœur historique et culturel d'Oman",
+      "legende": "Après un lever de soleil mémorable dans le désert, rejoignez Nizwa, l'ancienne capitale, pour explorer son imposant fort et son souk animé, témoins de la riche histoire et de la culture omanaise.",
+      "lieu": "Nizwa",
+      "activites": [
+        "<strong>☀️</strong>: Lever de soleil sur les dunes de Wahiba Sands, un moment de pure contemplation.",
+        "<strong>🚗</strong>: Route vers Nizwa, la capitale historique et spirituelle d'Oman.",
+        "<strong>🏛️</strong>: Visite du Fort de Nizwa et de son souk traditionnel, réputé pour ses poteries et ses bijoux en argent."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🗓️",
+          "titre": "Marché aux bestiaux",
+          "texte": "Si vous êtes à Nizwa un vendredi matin, ne manquez pas le marché aux bestiaux, une expérience culturelle authentique et animée."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "⛰️",
+      "titre": "Jebel Akhdar: Le \"Mont Vert\" et ses terrasses",
+      "legende": "Échappez à la chaleur en montant vers le Jebel Akhdar, le \"Mont Vert\", où vous découvrirez des villages perchés, des terrasses agricoles verdoyantes et des vues panoramiques à couper le souffle, propices à de douces balades.",
+      "lieu": "Jebel Akhdar",
+      "activites": [
+        "<strong>🚗</strong>: Ascension vers le Jebel Akhdar (accès en 4x4 obligatoire), admirant les paysages montagneux.",
+        "<strong>🚶‍♀️</strong>: Balade tranquille à travers les villages de montagne comme Al Aqr ou Saiq, et leurs célèbres terrasses de roses et de grenadiers.",
+        "<strong>🌸</strong>: Visite d'une distillerie d'eau de rose traditionnelle (selon la saison) ou simple contemplation des vues."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🌡️",
+          "titre": "Températures",
+          "texte": "Les températures sont plus fraîches en altitude. Prévoyez des vêtements chauds, surtout le soir."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🌄",
+      "titre": "Jebel Shams et Misfat Al Abriyeen",
+      "legende": "Admirez les panoramas grandioses du Jebel Shams, le \"Grand Canyon d'Oman\", puis descendez vers le charmant village de Misfat Al Abriyeen, une oasis de verdure où le temps semble s'être arrêté.",
+      "lieu": "Jebel Shams / Misfat Al Abriyeen",
+      "activites": [
+        "<strong>⛰️</strong>: Admiration des vues imprenables depuis les points de vue du Jebel Shams, le plus haut sommet d'Oman.",
+        "<strong>🚶‍♂️</strong>: Promenade paisible dans le village de Misfat Al Abriyeen, avec ses maisons en terre et son système d'irrigation ancestral (falaj).",
+        "<strong>☕</strong>: Pause thé ou café dans un café local à Misfat, profitant de l'ambiance sereine."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Accès",
+          "texte": "L'accès au Jebel Shams et à Misfat Al Abriyeen nécessite un 4x4 en raison des routes escarpées."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🏛️",
+      "titre": "Forts historiques et oasis de montagne",
+      "legende": "Explorez les impressionnants forts de Bahla et Jabrin, classés à l'UNESCO, avant de vous diriger vers les régions plus reculées pour découvrir des oasis cachées et des paysages montagneux apaisants.",
+      "lieu": "Bahla / Jabrin / Rustaq",
+      "activites": [
+        "<strong>🏰</strong>: Visite du Fort de Bahla (UNESCO), un imposant édifice en terre crue, et du Château de Jabrin, réputé pour ses plafonds peints.",
+        "<strong>🚗</strong>: Route vers la région de Rustaq, traversant des paysages variés et des villages traditionnels.",
+        "<strong>🌴</strong>: Détente dans une palmeraie ou découverte d'un petit wadi local pour une immersion tranquille."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "📚",
+          "titre": "Histoire",
+          "texte": "Ces forts témoignent de l'ingéniosité architecturale et de l'histoire défensive d'Oman, offrant un aperçu fascinant du passé."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "♨️",
+      "titre": "Sources chaudes et Fort de Nakhal",
+      "legende": "Offrez-vous un moment de pure relaxation aux sources chaudes d'Ain Al Kasfah, réputées pour leurs vertus thérapeutiques, puis visitez le majestueux Fort de Nakhal, niché au pied des montagnes et entouré de palmiers.",
+      "lieu": "Rustaq / Nakhal",
+      "activites": [
+        "<strong>♨️</strong>: Baignade et relaxation dans les eaux thermales d'Ain Al Kasfah, une expérience apaisante.",
+        "<strong>🏰</strong>: Exploration du Fort de Nakhal, un fort impressionnant offrant des vues panoramiques sur l'oasis et les montagnes.",
+        "<strong>🚗</strong>: Retour progressif vers Mascate, profitant des derniers paysages de l'intérieur des terres."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Sources chaudes",
+          "texte": "Les sources d'Ain Al Kasfah sont très appréciées des locaux. Respectez la pudeur et les coutumes locales lors de la baignade."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🎭",
+      "titre": "Mascate: Culture et raffinement",
+      "legende": "Redécouvrez Mascate sous un angle culturel avec la visite de l'opéra royal, un joyau architectural, et des palais royaux, avant de profiter d'un après-midi de détente ou de shopping raffiné.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🎭</strong>: Visite de la Royal Opera House Muscat, un chef-d'œuvre d'architecture moderne et un centre culturel vibrant.",
+        "<strong>👑</strong>: Admiration de l'extérieur du Palais Al Alam, résidence du Sultan, et des forts Al Jalali et Al Mirani qui le protègent.",
+        "<strong>🛍️</strong>: Après-midi libre pour du shopping dans des boutiques modernes ou pour se détendre à l'hôtel."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🎶",
+          "titre": "Opéra",
+          "texte": "Vérifiez le programme de l'Opéra Royal, il est parfois possible d'assister à des représentations ou des visites guidées spécifiques."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🐬",
+      "titre": "Évasion marine et plages de Mascate",
+      "legende": "Embarquez pour une excursion en mer à la recherche des dauphins joueurs, puis profitez des plages immaculées de Mascate pour une journée de farniente et de baignade dans les eaux chaudes du golfe d'Oman.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🐬</strong>: Excursion matinale en bateau pour observer les dauphins dans leur habitat naturel, une expérience joyeuse et relaxante.",
+        "<strong>🏖️</strong>: Après-midi de détente sur une des belles plages de Mascate, comme la plage de Qurum ou Al Bustan.",
+        "<strong>🐠</strong>: Possibilité de faire de la plongée avec tuba (snorkeling) dans des eaux calmes et claires."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire",
+          "texte": "N'oubliez pas votre crème solaire, un chapeau et des lunettes de soleil, même en janvier, le soleil omanais est intense."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "💧",
+      "titre": "Wadi Dayq Dam et sérénité côtière",
+      "legende": "Partez pour une excursion paisible vers le Wadi Dayq Dam, un impressionnant barrage entouré de paysages désertiques et montagneux, offrant des vues magnifiques et des opportunités de balades douces.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🏞️</strong>: Excursion vers le Wadi Dayq Dam, un site impressionnant pour ses dimensions et son cadre naturel.",
+        "<strong>🚶‍♀️</strong>: Balade légère autour du barrage ou le long des rives du wadi, profitant du calme.",
+        "<strong>🍽️</strong>: Dîner d'adieu dans un restaurant de Mascate, savourant les saveurs locales."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Le Wadi Dayq Dam offre de superbes opportunités photographiques, surtout en fin d'après-midi."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "💆‍♀️",
+      "titre": "Derniers instants de détente et souvenirs",
+      "legende": "Profitez de cette dernière journée pour vous détendre, faire quelques achats de dernière minute ou vous offrir un soin relaxant, avant de vous préparer pour le départ, emportant avec vous des souvenirs inoubliables d'Oman.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🎁</strong>: Achats de souvenirs de dernière minute au souk ou dans les centres commerciaux.",
+        "<strong>💆‍♀️</strong>: Option pour un soin spa ou un massage relaxant pour terminer le voyage en beauté.",
+        "<strong>☕</strong>: Profiter d'un dernier café omanais ou d'un moment de calme avant le départ."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Préparation au départ",
+          "texte": "Vérifiez les horaires de votre vol et prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités."
+        }
+      ]
+    },
+    {
+      "jour": 15,
+      "symbole": "🛫",
+      "titre": "Départ d'Oman",
+      "legende": "C'est le moment de dire au revoir à Oman, ses paysages époustouflants et son hospitalité chaleureuse. Transfert à l'aéroport pour votre vol retour, la tête pleine de merveilleux souvenirs.",
+      "lieu": "Mascate",
+      "activites": [
+        "<strong>🛏️</strong>: Petit-déjeuner à l'hôtel et check-out.",
+        "<strong>🚗</strong>: Transfert vers l'aéroport international de Mascate (MCT).",
+        "<strong>🛫</strong>: Vol retour vers Saint Maurice, Italie."
+      ],
+      "illustration": "jour15.jpg",
+      "encarts": []
+    }
+  ],
+  "detail_budget": [
+    { "titre": "Budget vol:", "legende": "A partir de 483 €/pers (A/R depuis Saint Maurice)", "symbole": "🛬" },
+    { "titre": "Budget transports:", "legende": "450-550 €/pers (location 4x4 + essence pour 14 jours)", "symbole": "🚗" },
+    { "titre": "Budget repas:", "legende": "550-650 €/pers (restaurants locaux et quelques plus élaborés)", "symbole": "🥗" },
+    { "titre": "Budget logement:", "legende": "650-750 €/pers (hôtels 3* et campement désert)", "symbole": "🛏️" },
+    { "titre": "Budget activités:", "legende": "200-300 €/pers (entrées sites, excursions dauphins/tortues)", "symbole": "🎭" }
+  ],
+  "periodes_ideales": [
+    { "titre": "De Novembre à Mars", "symbole": "☀️" },
+    { "titre": "Climat doux et ensoleillé, idéal pour l'exploration", "symbole": "🌡️" }
+  ],
+  "infos_pratiques": [
+    { "titre": "En janvier, les températures varient entre 20 et 28°C le jour, plus fraîches la nuit et en montagne. Prévoir des vêtements légers mais aussi une veste pour le soir et l'altitude.", "symbole": "🌡️" },
+    { "titre": "La monnaie est le Rial Omanais (OMR). Les cartes de crédit sont acceptées dans les grandes villes et hôtels, mais prévoyez du liquide pour les souks et les petits commerces.", "symbole": "💳" },
+    { "titre": "Un permis de conduire international est recommandé pour la location de voiture. La conduite se fait à droite. Un 4x4 est fortement conseillé pour les wadis et le désert.", "symbole": "🚗" },
+    { "titre": "Achetez une carte SIM locale (Omantel ou Ooredoo) pour rester connecté. Le Wi-Fi est disponible dans la plupart des hébergements.", "symbole": "📶" },
+    { "titre": "Respectez les coutumes locales: portez des vêtements modestes, surtout en dehors des zones touristiques et lors des visites de sites religieux. L'alcool est toléré dans les hôtels internationaux.", "symbole": "🕌" }
+  ],
+  "liens_utiles": [
+    { "legende": "Vols", "titre": "Réserve ton vol", "url": "https://www.kayak.fr/flights/TRN-MCT/2026-01-15/2026-01-29", "symbole": "🛬" },
+    { "legende": "Infos officielles et inspirations", "titre": "Tourisme Oman", "url": "https://experienceoman.om/", "symbole": "📘" },
+    { "legende": "Location de voiture", "titre": "Rentalcars Oman", "url": "https://www.rentalcars.com/fr/country/om/", "symbole": "🚗" },
+    { "legende": "Météo", "titre": "Météo Oman", "url": "https://www.accuweather.com/fr/om/oman-weather", "symbole": "🌤️" }
+  ]
+}
