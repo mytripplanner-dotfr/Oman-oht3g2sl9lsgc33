@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oman: Évasion relaxante entre désert, wadis et montagnes </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Mascate, première immersion</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Mascate: Splendeurs architecturales et souk traditionnel</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Trésors naturels: Bimmah Sinkhole et Wadi Shab</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Sur: Dhows et tortues marines</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Wadi Bani Khalid et les dunes de Wahiba Sands</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Nizwa: Cœur historique et culturel d'Oman</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Jebel Akhdar: Le "Mont Vert" et ses terrasses</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Jebel Shams et Misfat Al Abriyeen</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Forts historiques et oasis de montagne</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Sources chaudes et Fort de Nakhal</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Mascate: Culture et raffinement</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Évasion marine et plages de Mascate</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Wadi Dayq Dam et sérénité côtière</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Derniers instants de détente et souvenirs</a>
+            
+                <a href="#jour-15" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J15 Départ d'Oman</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">OMAN</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Oman: Évasion relaxante entre désert, wadis et montagnes</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 15 au 29 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 2700€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 11h20 (depuis Saint maurice, italie)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Mascate, première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un long voyage, la capitale omanaise vous accueille en douceur. Installation à l'hôtel et première balade relaxante le long de la corniche pour sentir l'ambiance locale et admirer le coucher de soleil sur le golfe d'Oman.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬</strong>: Arrivée à l'aéroport international de Mascate (MCT) et transfert vers votre hôtel.</li><li><strong>🛏️</strong>: Installation et détente à votre hébergement après le voyage.</li><li><strong>🚶‍♂️</strong>: Balade tranquille le long de la corniche de Muttrah, imprégnez-vous de l'atmosphère maritime.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Le trajet depuis Saint Maurice est long. Prévoyez une première journée légère pour vous acclimater au décalage horaire et à la chaleur.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Mascate: Splendeurs architecturales et souk traditionnel</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez la majestueuse Grande Mosquée du Sultan Qaboos, un chef-d'œuvre d'architecture islamique, puis plongez dans l'effervescence colorée du souk de Muttrah pour une expérience sensorielle unique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🕌</strong>: Visite de la Grande Mosquée du Sultan Qaboos, un lieu de sérénité et de grandeur architecturale (tenue respectueuse exigée).</li><li><strong>🛍️</strong>: Flânerie dans le souk de Muttrah, l'un des plus anciens marchés arabes, pour des souvenirs et des épices.</li><li><strong>🌅</strong>: Dîner relaxant avec vue sur le port ou la mer.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👗 Code vestimentaire</p>
+                                <p class="text-gray-700">Pour la Grande Mosquée, les femmes doivent couvrir leurs cheveux, leurs bras et leurs jambes. Les hommes doivent porter des pantalons longs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Trésors naturels: Bimmah Sinkhole et Wadi Shab</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aventurez-vous vers le sud pour découvrir le spectaculaire Bimmah Sinkhole, une piscine naturelle aux eaux turquoise, avant de vous offrir une douce promenade dans le verdoyant Wadi Shab, ponctué de bassins rafraîchissants.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏊‍♀️</strong>: Baignade rafraîchissante dans le Bimmah Sinkhole, une doline impressionnante aux eaux cristallines.</li><li><strong>🚶‍♀️</strong>: Promenade facile dans le Wadi Shab, explorant les premiers bassins naturels et les palmeraies (possibilité de nager dans les piscines).</li><li><strong>🚗</strong>: Route panoramique le long de la côte vers Sur, avec des arrêts pour admirer les paysages.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Wadi Shab</p>
+                                <p class="text-gray-700">La promenade dans Wadi Shab peut être glissante par endroits. Prévoyez des chaussures adaptées à l'eau et à la marche.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sur: Dhows et tortues marines</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez la ville côtière de Sur, célèbre pour ses chantiers navals traditionnels de dhows, puis vivez une expérience inoubliable en observant les tortues marines pondre leurs œufs ou éclore sur la plage de Ras Al Jinz.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛵</strong>: Visite d'un chantier naval de dhows à Sur, témoins de l'héritage maritime omanais.</li><li><strong>🏖️</strong>: Détente sur une plage isolée près de Sur, profitant du calme et du soleil.</li><li><strong>🐢</strong>: Excursion nocturne ou matinale à la réserve de tortues de Ras Al Jinz pour observer ces créatures fascinantes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌙 Observation des tortues</p>
+                                <p class="text-gray-700">Les visites à Ras Al Jinz sont encadrées et se font en silence pour ne pas déranger les tortues. Réservez à l'avance.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Wadi Bani Khalid et les dunes de Wahiba Sands</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans les eaux émeraude du Wadi Bani Khalid, une oasis luxuriante, avant de vous aventurer dans l'immensité dorée des Wahiba Sands pour une nuit magique sous les étoiles dans un camp bédouin.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌴</strong>: Baignade et relaxation dans les piscines naturelles du Wadi Bani Khalid, entourées de palmiers.</li><li><strong>🚗</strong>: Traversée des dunes de Wahiba Sands en 4x4 jusqu'à votre campement désertique.</li><li><strong>✨</strong>: Coucher de soleil spectaculaire sur les dunes et dîner traditionnel sous le ciel étoilé.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Conduite dans le désert</p>
+                                <p class="text-gray-700">Un 4x4 est indispensable pour explorer les Wahiba Sands. Il est recommandé de dégonfler légèrement les pneus avant d'entrer dans le désert.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nizwa: Cœur historique et culturel d'Oman</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un lever de soleil mémorable dans le désert, rejoignez Nizwa, l'ancienne capitale, pour explorer son imposant fort et son souk animé, témoins de la riche histoire et de la culture omanaise.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>☀️</strong>: Lever de soleil sur les dunes de Wahiba Sands, un moment de pure contemplation.</li><li><strong>🚗</strong>: Route vers Nizwa, la capitale historique et spirituelle d'Oman.</li><li><strong>🏛️</strong>: Visite du Fort de Nizwa et de son souk traditionnel, réputé pour ses poteries et ses bijoux en argent.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗓️ Marché aux bestiaux</p>
+                                <p class="text-gray-700">Si vous êtes à Nizwa un vendredi matin, ne manquez pas le marché aux bestiaux, une expérience culturelle authentique et animée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Jebel Akhdar: Le "Mont Vert" et ses terrasses</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Échappez à la chaleur en montant vers le Jebel Akhdar, le "Mont Vert", où vous découvrirez des villages perchés, des terrasses agricoles verdoyantes et des vues panoramiques à couper le souffle, propices à de douces balades.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Ascension vers le Jebel Akhdar (accès en 4x4 obligatoire), admirant les paysages montagneux.</li><li><strong>🚶‍♀️</strong>: Balade tranquille à travers les villages de montagne comme Al Aqr ou Saiq, et leurs célèbres terrasses de roses et de grenadiers.</li><li><strong>🌸</strong>: Visite d'une distillerie d'eau de rose traditionnelle (selon la saison) ou simple contemplation des vues.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Températures</p>
+                                <p class="text-gray-700">Les températures sont plus fraîches en altitude. Prévoyez des vêtements chauds, surtout le soir.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Jebel Shams et Misfat Al Abriyeen</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Admirez les panoramas grandioses du Jebel Shams, le "Grand Canyon d'Oman", puis descendez vers le charmant village de Misfat Al Abriyeen, une oasis de verdure où le temps semble s'être arrêté.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛰️</strong>: Admiration des vues imprenables depuis les points de vue du Jebel Shams, le plus haut sommet d'Oman.</li><li><strong>🚶‍♂️</strong>: Promenade paisible dans le village de Misfat Al Abriyeen, avec ses maisons en terre et son système d'irrigation ancestral (falaj).</li><li><strong>☕</strong>: Pause thé ou café dans un café local à Misfat, profitant de l'ambiance sereine.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Accès</p>
+                                <p class="text-gray-700">L'accès au Jebel Shams et à Misfat Al Abriyeen nécessite un 4x4 en raison des routes escarpées.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Forts historiques et oasis de montagne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez les impressionnants forts de Bahla et Jabrin, classés à l'UNESCO, avant de vous diriger vers les régions plus reculées pour découvrir des oasis cachées et des paysages montagneux apaisants.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏰</strong>: Visite du Fort de Bahla (UNESCO), un imposant édifice en terre crue, et du Château de Jabrin, réputé pour ses plafonds peints.</li><li><strong>🚗</strong>: Route vers la région de Rustaq, traversant des paysages variés et des villages traditionnels.</li><li><strong>🌴</strong>: Détente dans une palmeraie ou découverte d'un petit wadi local pour une immersion tranquille.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📚 Histoire</p>
+                                <p class="text-gray-700">Ces forts témoignent de l'ingéniosité architecturale et de l'histoire défensive d'Oman, offrant un aperçu fascinant du passé.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sources chaudes et Fort de Nakhal</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Offrez-vous un moment de pure relaxation aux sources chaudes d'Ain Al Kasfah, réputées pour leurs vertus thérapeutiques, puis visitez le majestueux Fort de Nakhal, niché au pied des montagnes et entouré de palmiers.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>♨️</strong>: Baignade et relaxation dans les eaux thermales d'Ain Al Kasfah, une expérience apaisante.</li><li><strong>🏰</strong>: Exploration du Fort de Nakhal, un fort impressionnant offrant des vues panoramiques sur l'oasis et les montagnes.</li><li><strong>🚗</strong>: Retour progressif vers Mascate, profitant des derniers paysages de l'intérieur des terres.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Sources chaudes</p>
+                                <p class="text-gray-700">Les sources d'Ain Al Kasfah sont très appréciées des locaux. Respectez la pudeur et les coutumes locales lors de la baignade.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Mascate: Culture et raffinement</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Redécouvrez Mascate sous un angle culturel avec la visite de l'opéra royal, un joyau architectural, et des palais royaux, avant de profiter d'un après-midi de détente ou de shopping raffiné.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🎭</strong>: Visite de la Royal Opera House Muscat, un chef-d'œuvre d'architecture moderne et un centre culturel vibrant.</li><li><strong>👑</strong>: Admiration de l'extérieur du Palais Al Alam, résidence du Sultan, et des forts Al Jalali et Al Mirani qui le protègent.</li><li><strong>🛍️</strong>: Après-midi libre pour du shopping dans des boutiques modernes ou pour se détendre à l'hôtel.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎶 Opéra</p>
+                                <p class="text-gray-700">Vérifiez le programme de l'Opéra Royal, il est parfois possible d'assister à des représentations ou des visites guidées spécifiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Évasion marine et plages de Mascate</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Embarquez pour une excursion en mer à la recherche des dauphins joueurs, puis profitez des plages immaculées de Mascate pour une journée de farniente et de baignade dans les eaux chaudes du golfe d'Oman.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🐬</strong>: Excursion matinale en bateau pour observer les dauphins dans leur habitat naturel, une expérience joyeuse et relaxante.</li><li><strong>🏖️</strong>: Après-midi de détente sur une des belles plages de Mascate, comme la plage de Qurum ou Al Bustan.</li><li><strong>🐠</strong>: Possibilité de faire de la plongée avec tuba (snorkeling) dans des eaux calmes et claires.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire</p>
+                                <p class="text-gray-700">N'oubliez pas votre crème solaire, un chapeau et des lunettes de soleil, même en janvier, le soleil omanais est intense.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Wadi Dayq Dam et sérénité côtière</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez pour une excursion paisible vers le Wadi Dayq Dam, un impressionnant barrage entouré de paysages désertiques et montagneux, offrant des vues magnifiques et des opportunités de balades douces.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏞️</strong>: Excursion vers le Wadi Dayq Dam, un site impressionnant pour ses dimensions et son cadre naturel.</li><li><strong>🚶‍♀️</strong>: Balade légère autour du barrage ou le long des rives du wadi, profitant du calme.</li><li><strong>🍽️</strong>: Dîner d'adieu dans un restaurant de Mascate, savourant les saveurs locales.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Le Wadi Dayq Dam offre de superbes opportunités photographiques, surtout en fin d'après-midi.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers instants de détente et souvenirs</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette dernière journée pour vous détendre, faire quelques achats de dernière minute ou vous offrir un soin relaxant, avant de vous préparer pour le départ, emportant avec vous des souvenirs inoubliables d'Oman.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🎁</strong>: Achats de souvenirs de dernière minute au souk ou dans les centres commerciaux.</li><li><strong>💆‍♀️</strong>: Option pour un soin spa ou un massage relaxant pour terminer le voyage en beauté.</li><li><strong>☕</strong>: Profiter d'un dernier café omanais ou d'un moment de calme avant le départ.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Préparation au départ</p>
+                                <p class="text-gray-700">Vérifiez les horaires de votre vol et prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-15" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 15</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ d'Oman</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le moment de dire au revoir à Oman, ses paysages époustouflants et son hospitalité chaleureuse. Transfert à l'aéroport pour votre vol retour, la tête pleine de merveilleux souvenirs.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛏️</strong>: Petit-déjeuner à l'hôtel et check-out.</li><li><strong>🚗</strong>: Transfert vers l'aéroport international de Mascate (MCT).</li><li><strong>🛫</strong>: Vol retour vers Saint Maurice, Italie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Oman-oht3g2sl9lsgc33/main/jour15.jpg" class="w-full h-64 object-cover" alt="Jour 15">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>A partir de 483 €/pers (A/R depuis Saint Maurice)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>450-550 €/pers (location 4x4 + essence pour 14 jours)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>550-650 €/pers (restaurants locaux et quelques plus élaborés)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>650-750 €/pers (hôtels 3* et campement désert)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>200-300 €/pers (entrées sites, excursions dauphins/tortues)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">De Novembre à Mars</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Climat doux et ensoleillé, idéal pour l'exploration</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌡️ En janvier, les températures varient entre 20 et 28°C le jour, plus fraîches la nuit et en montagne. Prévoir des vêtements légers mais aussi une veste pour le soir et l'altitude.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est le Rial Omanais (OMR). Les cartes de crédit sont acceptées dans les grandes villes et hôtels, mais prévoyez du liquide pour les souks et les petits commerces.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 Un permis de conduire international est recommandé pour la location de voiture. La conduite se fait à droite. Un 4x4 est fortement conseillé pour les wadis et le désert.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Achetez une carte SIM locale (Omantel ou Ooredoo) pour rester connecté. Le Wi-Fi est disponible dans la plupart des hébergements.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🕌 Respectez les coutumes locales: portez des vêtements modestes, surtout en dehors des zones touristiques et lors des visites de sites religieux. L'alcool est toléré dans les hôtels internationaux.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Oman-oht3g2sl9lsgc33/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/TRN-MCT/2026-01-15/2026-01-29" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://experienceoman.om/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Oman</strong></a></li>
+                    
+                        <li><a href="https://www.rentalcars.com/fr/country/om/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚗 Rentalcars Oman</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/om/oman-weather" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Oman</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
